@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -8,26 +6,23 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <section id="about">
+        <h2>Sobre Estética Belleza Total</h2>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          En Estética Belleza Total, ofrecemos una amplia gama de servicios de belleza para resaltar tu mejor versión. 
+          Nuestro equipo de expertos utiliza productos de alta calidad y técnicas avanzadas para garantizar que te veas y sientas fabulosa.
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      </section>
+      <section id="services">
+        <h2>Servicios</h2>
+        <ul>
+          <li>Faciales</li>
+          <li>Manicure y Pedicure</li>
+          <li>Tratamientos Corporales</li>
+          <li>Cortes y Peinados</li>
+          <li>Maquillaje Profesional</li>
+        </ul>
+      </section>
     </>
   )
 }
